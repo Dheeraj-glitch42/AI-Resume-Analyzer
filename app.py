@@ -14,9 +14,9 @@ from nltk import pos_tag #part of speech,assign levels  to sentences like noun p
 # Download NLTK resourses
 
 
-# nltk.download("stopwords")
-# nltk.download("averaged_perceptron_tagger")
-# nltk.download("punkt")
+nltk.download("stopwords")
+nltk.download("averaged_perceptron_tagger")
+nltk.download("punkt")
 nltk.download("averaged_perceptron_tagger_eng")
 
 
