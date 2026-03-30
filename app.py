@@ -14,11 +14,11 @@ from nltk import pos_tag #part of speech,assign levels  to sentences like noun p
 # Download NLTK resourses
 
 
-nltk.download("stopwords")
+# nltk.download("stopwords")
+# nltk.download("averaged_perceptron_tagger")
+# nltk.download("punkt")
 nltk.download("averaged_perceptron_tagger_eng")
-nltk.download("punkt")
 
-nltk.download("averaged_perceptron_tagger")
 
     
      #PAGE SETUP
@@ -74,7 +74,8 @@ def clean_text(text):
 
 def remove_stopwords(text): # remove_stopwords is function name
     stop_words=set(stopwords.words('english'))     #stopwords is library that stores is am are etc
-    words=word_tokenize(text)
+    # words=word_tokenize(text)
+    words = text.split()
     return " ".join([word for word in words if word not in stop_words])
 
 
@@ -165,4 +166,5 @@ if __name__ == "__main__":
         
 
     
+
 
