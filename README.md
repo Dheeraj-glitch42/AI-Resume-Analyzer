@@ -13,5 +13,6 @@ This project analyzes resumes using NLP and matches them with job descriptions.
 - Scikit-learn
 
 ## Run
-pip install -r requirements.txt
+pip install -r requirements.txt 
+
 streamlit run app.py
